@@ -8,6 +8,7 @@ cta:
   link: "about"
 ---
 
+Here's another test
 Hi there. Before having fun with Phenomic, be sure to read the documentation :
 
 * [How to setup a new project with Phenomic](https://phenomic.io/docs/setup/)
