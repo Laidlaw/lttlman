@@ -2,7 +2,6 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
 import { BodyContainer, joinUri, Link } from "phenomic"
-
 import Button from "../../components/Button"
 import Loading from "../../components/Loading"
 
@@ -65,6 +64,14 @@ const Page = (
         >
           <div className={ styles.header }>
             <div className={ styles.wrapper }>
+              {
+                head.avatar &&
+                <div className={ styles.avatar } style={head.avatar && {
+                  background: `#111 url(${ head.avatar }) 50% 50% / contain`,
+                  height: '250px',
+                }}>
+                </div>
+              }
               <h1 className={ styles.heading }>{ head.title }</h1>
               {
                 head.cta &&
@@ -74,6 +81,7 @@ const Page = (
                   </Button>
                 </Link>
               }
+
             </div>
           </div>
         </div>
