@@ -1,6 +1,8 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
+import {Avatar } from "rebass"
+import { Flex, Box } from 'reflexbox'
 import { BodyContainer, joinUri, Link } from "phenomic"
 import Button from "../../components/Button"
 import Loading from "../../components/Loading"
@@ -49,6 +51,8 @@ const Page = (
     { name: "description", content: head.description },
   ]
 
+
+
   return (
     <div className={ styles.page }>
       <Helmet
@@ -66,11 +70,11 @@ const Page = (
             <div className={ styles.wrapper }>
               {
                 head.avatar &&
-                <div className={ styles.avatar } style={head.avatar && {
-                  background: `#111 url(${ head.avatar }) 50% 50% / contain`,
-                  height: '250px',
-                }}>
-                </div>
+                <Flex align='center' justify="space-between">
+                  <Box>
+                    <Avatar className={styles.centered} circle size={200} src={head.avatar} ></Avatar>
+                  </Box>
+                </Flex>
               }
               <h1 className={ styles.heading }>{ head.title }</h1>
               {
@@ -86,19 +90,24 @@ const Page = (
           </div>
         </div>
       }
-      <div className={ styles.wrapper + " " + styles.pageContent }>
-        { header }
-        <div className={ styles.body }>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
-        { children }
-        { footer }
-      </div>
+
+          <div className={ styles.wrapper + " " + styles.pageContent }>
+            { header }
+
+              <div className={ styles.body }>
+                {
+                  isLoading
+                  ? <Loading />
+                  : <BodyContainer>{ body }</BodyContainer>
+                }
+              </div>
+
+            { children }
+            { footer }
+          </div>
+
     </div>
+
   )
 }
 

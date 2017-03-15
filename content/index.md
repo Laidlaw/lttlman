@@ -9,6 +9,16 @@ cta:
   link: "about"
 ---
 
+<Heading level={2}>
+  Hi, I'm Alan Laidlaw.
+</Heading>
+
+I love building products and systems that tackle complex problems. I've been doing this for 10 years, so I've seen all sides of the product lifecycle, from multi-million dollar contracts to early stage startups.
+
+I'm cross-disciplined by default. If there is a bottleneck in the system, in the software or the company, I gravitate toward it and shed light on it.
+
+Most recently, that meant learning React and Elixir so that we could launch a B2B Saas application in four months.
+
 # Navigation
 * about
 * work
@@ -21,40 +31,3 @@ cta:
   * NUX
   * UserOnboarding
 * Hire me
-
-
-Here's another test
-Hi there. Before having fun with Phenomic, be sure to read the documentation :
-
-* [How to setup a new project with Phenomic](https://phenomic.io/docs/setup/)
-* [Getting Started with Phenomic](https://phenomic.io/docs/getting-started/)
-* [Usage & APIs](https://phenomic.io/docs/usage/)
-* [FAQ](https://phenomic.io/docs/faq/)
-
-Also take a look at
-[existing websites that use Phenomic](https://phenomic.io/showcase/),
-some projects share their source code!
-
-<!-- demo to show you that you can use "assets" folder -->
-<small>
-  Built with
-  <a href="https://facebook.github.io/react/">
-    <img alt="" src="assets/react.svg" width="16" height="16" />
-    React
-  </a>.
-</small>
-
----
-
-You may want to take a look at the [404.html](/404.html) and tweak the render.
-
-If you need to make adjustments, you can directly alter page layouts in
-``src/layouts/``;
-small things like the header, footer, buttons and so on can be changed in
-``src/components/``;
-and for colors and common CSS variables, you can modify ``postcss.config.js``.
-
-_You feel like the base theme is not enough or you just saw something wrong?_
-[Please help us make Phenomic better!](https://phenomic.io/contributing/)
-
----

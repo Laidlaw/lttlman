@@ -15,13 +15,14 @@
 .hero {
   /* fallback, mainly visible when hero image is loading */
   background-color: var(--colorSecondary);
+
   /* fallback when there is no hero image */
-  background:
+  /*background:
     radial-gradient(
       ellipse at 50% 50%,
       color(var(--colorSecondary) l(+ 10%)) 15%,
       var(--colorSecondary) 70%
-    );
+    );*/
 }
 
 .logo {line-height: 0;}
@@ -34,7 +35,8 @@
   -moz-clip-path: circle(95px at center 100px);
 }
 // img { mix-blend-mode: multiply; }
-.img-centered {
+
+.centered {
     margin: 0 auto;
 }
 
@@ -70,6 +72,7 @@
 }
 
 .body {
+  max-width: 80%;
   & a {
     color: var(--colorPrimary);
     transition: all 0.2s;
