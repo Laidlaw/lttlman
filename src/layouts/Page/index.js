@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
 import {Avatar } from "rebass"
-import { Flex, Box } from 'reflexbox'
+
 import { BodyContainer, joinUri, Link } from "phenomic"
 import Button from "../../components/Button"
 import Loading from "../../components/Loading"
@@ -70,13 +70,11 @@ const Page = (
             <div className={ styles.wrapper }>
               {
                 head.avatar &&
-                <Flex align='center' justify="space-between">
-                  <Box>
-                    <Avatar className={styles.centered} circle size={200} src={head.avatar} ></Avatar>
-                  </Box>
-                </Flex>
+                  <div className={ styles.centered } >
+                    <Avatar circle size={200} src={head.avatar} ></Avatar>
+                  </div>
               }
-              <h1 className={ styles.heading }>{ head.title }</h1>
+              <h1 className={ styles.heading }>{ head.tagline }</h1>
               {
                 head.cta &&
                 <Link to={ head.cta.link }>

@@ -13,7 +13,7 @@ const PagesList = ({ pages }) => {
         <ul className={ styles.list }>
           {
           pages.map((page) => (
-            <Card width={256} key={ page.title }><PagePreview { ...page } /></Card>
+            <Card width={256} className={ styles.card } key={ page.title }><PagePreview { ...page } /></Card>
           ))
         }
         </ul>

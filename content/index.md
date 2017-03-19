@@ -4,14 +4,14 @@ layout: Homepage
 # hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
 avatar: assets/me.jpg
-cta:
-  label: About this theme
-  link: "about"
+tagline: is a Product Manager
+# cta:
+#  label: About this theme
+#  link: "about"
 ---
 
-<Heading level={2}>
-  Hi, I'm Alan Laidlaw.
-</Heading>
+
+# Hi, I'm Alan Laidlaw.
 
 I love building products and systems that tackle complex problems. I've been doing this for 10 years, so I've seen all sides of the product lifecycle, from multi-million dollar contracts to early stage startups.
 

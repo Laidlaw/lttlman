@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
+
 import Svg from "react-svg-inline"
 
 import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
@@ -37,7 +38,12 @@ const Header = (props, { metadata: { pkg } }) => (
             <Svg svg={ gitHubSvg } cleanup />
             { "GitHub" }
           </a>
+
         }
+        <a
+          href={ `/assets/alanlaidlaw.2017.pdf` }
+
+        >Resume</a>
       </div>
     </nav>
   </header>
