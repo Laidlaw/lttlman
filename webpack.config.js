@@ -16,10 +16,21 @@ export default (config = {}) => {
   // until this is officially supported
   // https://github.com/postcss/postcss-loader/issues/66
   const postcssPluginFile = require.resolve("./postcss.config.js")
+  // const postcssPlugins = (webpackInstance) => {
+  //   webpackInstance.addDependency(postcssPluginFile)
+  //   delete require.cache[postcssPluginFile]
+  //   return require(postcssPluginFile)(config)
+  // }
   const postcssPlugins = (webpackInstance) => {
+    const varFile = require.resolve("./src/_variables.js")
+    const varFileContents = () => {
+      webpackInstance.addDependency(varFile)
+      delete require.cache[varFile]
+      return require(varFile)()
+    }
     webpackInstance.addDependency(postcssPluginFile)
     delete require.cache[postcssPluginFile]
-    return require(postcssPluginFile)(config)
+    return require(postcssPluginFile)(config, varFileContents())
   }
 
   return {

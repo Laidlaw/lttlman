@@ -1,20 +1,32 @@
 .page {
   display: flex;
   flex-direction: column;
+  /*max-width: 96rem;*/
+  max-width: $maxWidth;
+  /*margin: 20px auto 0 auto;*/
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: $colorSecondary;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-weight: 400;
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 100%;
-  max-width: var(--maxWidth);
+  /*max-width: 96rem;*/
   padding: 1rem 0.75rem;
 }
 
 .hero {
   /* fallback, mainly visible when hero image is loading */
-  background-color: var(--colorSecondary);
+
+  background-color: $colorSecondary;
 
   /* fallback when there is no hero image */
   /*background:
@@ -26,26 +38,19 @@
 }
 
 .logo {line-height: 0;}
-.avatar {
-  /*height: 250px;*/
-  display: block;
-  max-width: 100%;
-  clip-path: circle(95px at center 100px);
-  -webkit-clip-path: circle(95px at center 100px);
-  -moz-clip-path: circle(95px at center 100px);
-}
-/*// img { mix-blend-mode: multiply; }*/
 
 .centered {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0 auto;
+    padding: 0;
+    /*z-index: 12;*/
 }
 
 .header {
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
-  padding: 10vh 0;
+  padding: 6vh 0;
   text-align: center;
   /*background: linear-gradient(
     to bottom,
@@ -55,14 +60,15 @@
 }
 
 .heading {
-  color: var(--colorNeutralLight);
+  color: $colorNeutralLight;
   /*text-shadow:
     0 0 10px var(--colorPrimaryDark),
     0 0 6px var(--colorNeutralDark),
     0 0 2px var(--colorNeutralDark)
   ;*/
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .cta {
@@ -70,21 +76,21 @@
 }
 
 .pageContent {
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .body {
-  max-width: 80%;
+  max-width: $maxWidth;
   & a {
-    color: var(--colorPrimary);
+    /*color: var(--colorPrimary);*/
     transition: all 0.2s;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 
     &:hover {
       opacity: 1;
-      color: color(var(--colorPrimary) l(- 5%));
-      border-bottom-color: var(--colorPrimary);
+      /*color: color(var(--colorPrimary) l(- 5%));*/
+      /*border-bottom-color: var(--colorPrimary);*/
     }
   }
 
@@ -92,4 +98,30 @@
   & img {
     max-width: 100%;
   }
+}
+
+.fullWidth {
+  width: 100%;
+  a {
+    color: $black2;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-weight: 400;
+  }
+  strong a {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 960px) {
+  .page {
+    /*padding: 0 10px;*/
+  }
+  .fullWidth {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+
 }

@@ -8,35 +8,35 @@
 
   transition: .2s all;
 
-  color: var(--colorPrimary);
-  border: 1px solid var(--colorPrimary);
-  background: color(var(--colorNeutralLight) a(0.2));
+  /*color: var(--colorPrimary);*/
+  /*border: 1px solid var(--colorPrimary);*/
+  /*background: color(var(--colorNeutralLight) a(0.2));*/
 
   &:hover {
     text-decoration: none;
-    color: var(--colorPrimaryDark);
-    border: 1px solid var(--colorPrimaryDark);
+    /*color: var(--colorPrimaryDark);*/
+    /*border: 1px solid var(--colorPrimaryDark);*/
   }
 }
 
 .secondary {
-  color: var(--colorSecondary);
-  border: 1px solid var(--colorSecondary);
+  /*color: var(--colorSecondary);*/
+  /*border: 1px solid var(--colorSecondary);*/
 
   &:hover {
-    color: var(--colorSecondaryDark);
-    border: 1px solid var(--colorSecondaryDark);
+    /*color: var(--colorSecondaryDark);*/
+    /*border: 1px solid var(--colorSecondaryDark);*/
   }
 }
 
 .light {
-  color: var(--colorNeutralLight);
-  border: 1px solid var(--colorNeutralLight);
+  /*color: var(--colorNeutralLight);*/
+  /*border: 1px solid var(--colorNeutralLight);*/
 
   &:hover {
-    color: var(--colorNeutralLight);
-    border: 1px solid var(--colorNeutralLight);
-    background: color(var(--colorNeutralLight) a(0.3));
+    /*color: var(--colorNeutralLight);*/
+    /*border: 1px solid var(--colorNeutralLight);*/
+    /*background: color(var(--colorNeutralLight) a(0.3));*/
   }
 }
 

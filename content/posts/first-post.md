@@ -4,7 +4,10 @@ date: 2016-01-22
 layout: Post
 ---
 
-This is the first post!
+*This is the first post!*
+
+[awesomeHeader]({size: 300, children: "fire them all"})
+[test]("http://alanlaidlaw.com")
 
 Code is highlighted by default.
 

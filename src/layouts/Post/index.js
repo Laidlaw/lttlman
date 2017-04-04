@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 
 import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
-
+import Part from "../../components/Part"
 import styles from "./index.css"
 
 const Post = (props) => {
@@ -13,7 +13,7 @@ const Post = (props) => {
     <Page
       { ...props }
       header={
-        <div>
+
           <header className={ styles.header }>
             {
               pageDate &&
@@ -22,9 +22,10 @@ const Post = (props) => {
               </time>
             }
           </header>
-        </div>
+        
       }
     >
+
       <hr />
       <LatestPosts />
     </Page>

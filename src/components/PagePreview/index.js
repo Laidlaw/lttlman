@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
-
+// import { Heading } from 'rebass'
 import Button from "../../components/Button"
 
 import styles from "./index.css"
@@ -13,6 +13,8 @@ const PagePreview = ({ __url, title, date, description }) => {
       <Link to={ __url } className={ styles.title }>
         { title }
       </Link>
+
+
       <div className={ styles.meta }>
         {
           pageDate &&
