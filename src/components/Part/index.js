@@ -12,4 +12,5 @@ const Part = styled.div`
   margin-bottom: 1rem;
   flex-direction: ${props => props.row ? 'row' : 'column'};
 `
+
 export default Part;
